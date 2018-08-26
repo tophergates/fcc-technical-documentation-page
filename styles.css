@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 160%;
+  line-height: 1.2;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.nav {
+  background-color: #fff;
+}
+
+.title {
+  background: #eea;
+  border-bottom: 1px solid #333;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav-list {
+  background-color: #fff;
+  border: 1px solid #000;
+  height: 20rem;
+  overflow-y: scroll;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  border-bottom: 1px solid #000;
+}
+
+.nav-item:last-child {
+  border-bottom: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 1.05rem 2rem;
+}
+
+.nav-link:link,
+.nav-link:active,
+.nav-link:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #eee;
+  font-weight: 600;
+}
+
+.main {
+  line-height: 1.8;
+}
+
+.hljs {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+}
+
+.main-section {
+  padding: 1rem 3rem;
+}
+
+.main-section ul li {
+  padding-bottom: 2rem;
+}
+
+.main-section ul li:last-child {
+  padding-bottom: 0;
+}
+
+.main-section:nth-child(2n) {
+  background: linear-gradient(45deg, #cea, #cee);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #aaa;
+}
+
+.footer {
+  background: linear-gradient(45deg, #ccc, #eee);
+}
+
+.footer__inner {
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+  padding: 0.85rem 0;
+  text-align: center;
+}
+
+.footer__hearts {
+  color: #a69;
+}
+
+/* Larger screen sizes; fixed side navigation */
+@media screen and (min-width: 800px) {
+  .nav {
+    border-right: 2px solid #333;
+    box-shadow: 2px 0 0.85rem 2px #ccc;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 28rem;
+  }
+
+  .nav-list {
+    border: 0;
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .nav-item {
+    border: 0;
+    border-top: 1px solid #000;
+  }
+
+  .nav-item:first-child {
+    border-top: 0;
+  }
+
+  .nav-item:last-child {
+    border-bottom: 1px solid #000;
+  }
+
+  .main {
+    position: absolute;
+    margin-left: 28rem;
+  }
+}
